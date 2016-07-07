@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.samir.movieappfragment.MainActivity"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:background="@android:color/holo_green_dark">
+
+    <fragment
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.example.samir.movieappfragment.MainActivityFragment"
+        android:id="@+id/fragment_main_container"
+        tools:layout="@layout/fragment_main"
+        android:layout_weight="1"
+        />
+
+    <FrameLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name="com.example.samir.movieappfragment.MovieDetailsFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/movie_details_container"
+        tools:context="com.example.samir.movieappfragment.MovieDetailsFragment"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
